@@ -1,21 +1,64 @@
 <!DOCTYPE html>
 
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="calculator.css">
 
-<STYLE>A {text-decoration: none;} </STYLE>
+<script src="calculator.js"></script>
+
+<!--Google Fonts: Sniglet-->
+<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
+
+<STYLE>
+    A {
+        text-decoration: none;
+    }
+</STYLE>
 
 <html>
-    <body>
-        <title>Laskuri | Hopeanuoli</title>
-        <img id="doggo" src="http://wallarthd.com/wp-content/uploads/2014/09/Funny-Dog-Reading-a-Newspaper-Wallpaper-Full-HD.jpg" alt="doggo">
 
-    <div id="calculator">
+<body style="font-family:'sniglet', cursive, sans-serif">
+
+    <title>Laskuri | Hopeanuoli</title>
+    <img id="doggo"
+        src="http://wallarthd.com/wp-content/uploads/2014/09/Funny-Dog-Reading-a-Newspaper-Wallpaper-Full-HD.jpg"
+        alt="doggo">
+
+<div id="calculator">
         <h1 id="menekki">KOIRAN RUUAN MENEKKI</h1>
-        <H1 id="kg">KG INPUT</H1>
+        <h1 id="paino">KOIRAN PAINO</h1>
+        
+        <h1 id="kg">
+            <label>&nbsp;&nbsp;&nbsp;KG</label><br>
+        </h1>
+
+        <input type="text" id="kginput" maxlength="5" name='kginput' onblur="getTotal()"/>
+
         <H1 id="hinta">TARVIKKEIDEN HINTA</H1>
-        <H1 id="dropdown">DROPDOWN TYPE</H1>
+        <h1 id="ammatti">KOIRAN AMMATTI</h1>
+
+        <div class="custom-select" style="width:200px;">
+            <select id="valitse" name='valitse' onfocus="this.selectedIndex=0;" onchange="getTotal()">
+                <option >VALITSE</option>
+                <option value=25>Poliisikoira</option>
+                <option value=50>Tohtorikoira</option>
+                <option value=75>Oikeuskoira</option>
+            </select>
+        </div>
+
         <H1 id="total">TOTAL COST</H1>
+        
+        <input id="sum" type='text' name='total' readonly/>
+
+        <h1 id="euro">€</h1>
+
+        <button id="calculate">CALCULATE</button>
+        <input id="reset" type="reset" value="RESET"></input>
+
     </div>
 
-    </body>
+</body>
+
 </html>
+
+<link rel="stylesheet" href="calculator.css">
+
+<script src="calculator.js"></script>
