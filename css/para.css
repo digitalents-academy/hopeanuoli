@@ -20,22 +20,22 @@ body, html {
 }
 
 .pimg1 {
-    background-image:url('pimg1.jpg');
+    background-image:url('https://raw.githubusercontent.com/digitalents-academy/hopeanuoli/main/parallaxImages/pimg1.jpg');
     min-height: 100%;
 }
 
 .pimg2 {
-    background-image:url("pimg2.jpg");
+    background-image:url("https://raw.githubusercontent.com/digitalents-academy/hopeanuoli/main/parallaxImages/pimg2.jpg");
     min-height: 400px;
 }
 
 .pimg3 {
-    background-image:url("pimg3.jpg");
+    background-image:url("https://raw.githubusercontent.com/digitalents-academy/hopeanuoli/main/parallaxImages/pimg3.jpg");
     min-height: 400px;
 }
 
 .pimg4 {
-    background-image:url("pimg4.jpg");
+    background-image:url("https://raw.githubusercontent.com/digitalents-academy/hopeanuoli/main/parallaxImages/pimg4.jpg");
     min-height: 700px;
 
 }
